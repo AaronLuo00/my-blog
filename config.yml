@@ -1,0 +1,17 @@
+# 注意：这个文件仅作为参考
+# 本博客主要使用 hugo.toml 作为配置文件
+# 请在 hugo.toml 中进行所有配置更改
+
+# 如果您需要使用 YAML 格式的配置，可以将 hugo.toml 中的内容转换为 YAML 格式
+# 并在此文件中进行配置，但请确保删除 hugo.toml 以避免配置冲突
+
+# 以下是一个基本的 YAML 配置示例：
+# baseURL: 'https://AaronLuo00.github.io/my-blog/'
+# defaultContentLanguage: "en"
+# defaultContentLanguageInSubdir: true
+# theme: "PaperMod"
+# enableRobotsTXT: true
+# buildDrafts: false
+# buildFuture: false
+# buildExpired: false
+# enableEmoji: true
