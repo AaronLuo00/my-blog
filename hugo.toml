@@ -1,0 +1,80 @@
+baseURL = 'https://AaronLuo00.github.io/my-blog/'
+languageCode = 'zh-cn'
+title = '我的博客'
+theme = 'PaperMod'
+
+# 启用机器人文件
+enableRobotsTXT = true
+
+# 构建设置
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+# 启用表情符号
+enableEmoji = true
+
+# 分页设置
+pagination = { pagerSize = 5 }
+
+# 主要内容部分
+[params]
+  # 环境设置
+  env = "production"
+  
+  # 基本信息
+  description = "我的个人博客"
+  author = "您的名字"
+  
+  # 主题设置
+  defaultTheme = "auto"
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  
+  # 主页信息
+  [params.homeInfoParams]
+    Title = "欢迎来到我的博客"
+    Content = """
+    这是我使用Hugo和PaperMod主题创建的个人博客。
+
+    - 在这里，我将分享我的想法、经验和知识
+    - 主题使用了PaperMod，一个简洁、现代的Hugo主题
+    """
+  
+  # 社交图标
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/AaronLuo00"
+  
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/yourusername"
+
+# 菜单设置
+[menu]
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 30
+
+# Markdown渲染设置
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

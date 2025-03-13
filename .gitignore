@@ -1,0 +1,8 @@
+# Hugo默认输出目录
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# 临时锁文件
+.hugo_build.lock
