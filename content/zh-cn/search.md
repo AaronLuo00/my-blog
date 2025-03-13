@@ -1,6 +1,6 @@
 ---
-title: "Search"
+title: "搜索"
 layout: "search"
 url: "/search/"
-summary: "Search"
+summary: "搜索"
 ---

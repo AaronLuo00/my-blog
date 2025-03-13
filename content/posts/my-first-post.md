@@ -1,39 +1,39 @@
 ---
-title: "我的第一篇博客文章"
+title: "My First Blog Post"
 date: 2023-01-01
 draft: false
-tags: ["博客", "Hugo"]
-categories: ["技术"]
+tags: ["Blog", "Hugo"]
+categories: ["Technology"]
 ---
 
-# 欢迎来到我的博客
+# Welcome to My Blog
 
-这是我的第一篇使用Hugo和PaperMod主题创建的博客文章。
+This is my first blog post created with Hugo and PaperMod theme.
 
-## 介绍
+## Introduction
 
-在这里，我将分享我的想法和经验。Hugo是一个强大的静态网站生成器，而PaperMod是一个简洁、现代的主题。
+Here, I will share my thoughts and experiences. Hugo is a powerful static site generator, and PaperMod is a clean, modern theme.
 
-## 为什么选择Hugo？
+## Why Choose Hugo?
 
-Hugo有以下几个优点：
+Hugo has several advantages:
 
-1. **速度快**：Hugo是目前最快的静态网站生成器之一
-2. **易于使用**：简单的命令和清晰的文档
-3. **灵活性**：支持多种内容格式和自定义
-4. **主题丰富**：有大量的社区主题可供选择
+1. **Fast**: Hugo is one of the fastest static site generators available
+2. **Easy to Use**: Simple commands and clear documentation
+3. **Flexibility**: Supports various content formats and customization
+4. **Rich Themes**: Has a large collection of community themes to choose from
 
-## PaperMod主题的特点
+## Features of PaperMod Theme
 
-PaperMod主题具有以下特点：
+The PaperMod theme has the following features:
 
-- 响应式设计
-- 暗黑模式支持
-- 搜索功能
-- 多语言支持
-- 社交图标
-- 代码高亮
+- Responsive design
+- Dark mode support
+- Search functionality
+- Multilingual support
+- Social icons
+- Code highlighting
 
-## 结论
+## Conclusion
 
-感谢阅读我的第一篇文章！我将继续更新更多有趣的内容。
+Thank you for reading my first article! I will continue to update with more interesting content.
