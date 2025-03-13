@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术 on My Blog</title><link>https://AaronLuo00.github.io/my-blog/en/categories/%E6%8A%80%E6%9C%AF/</link><description>Recent content in 技术 on My Blog</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://AaronLuo00.github.io/my-blog/en/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>我的第一篇博客文章</title><link>https://AaronLuo00.github.io/my-blog/en/zh-cn/posts/my-first-post/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><guid>https://AaronLuo00.github.io/my-blog/en/zh-cn/posts/my-first-post/</guid><description>&lt;h1 id="欢迎来到我的博客">欢迎来到我的博客&lt;/h1>
+&lt;p>这是我的第一篇使用Hugo和PaperMod主题创建的博客文章。&lt;/p>
+&lt;h2 id="介绍">介绍&lt;/h2>
+&lt;p>在这里，我将分享我的想法和经验。Hugo是一个强大的静态网站生成器，而PaperMod是一个简洁、现代的主题。&lt;/p>
+&lt;h2 id="为什么选择hugo">为什么选择Hugo？&lt;/h2>
+&lt;p>Hugo有以下几个优点：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>速度快&lt;/strong>：Hugo是目前最快的静态网站生成器之一&lt;/li>
+&lt;li>&lt;strong>易于使用&lt;/strong>：简单的命令和清晰的文档&lt;/li>
+&lt;li>&lt;strong>灵活性&lt;/strong>：支持多种内容格式和自定义&lt;/li>
+&lt;li>&lt;strong>主题丰富&lt;/strong>：有大量的社区主题可供选择&lt;/li>
+&lt;/ol>
+&lt;h2 id="papermod主题的特点">PaperMod主题的特点&lt;/h2>
+&lt;p>PaperMod主题具有以下特点：&lt;/p>
+&lt;ul>
+&lt;li>响应式设计&lt;/li>
+&lt;li>暗黑模式支持&lt;/li>
+&lt;li>搜索功能&lt;/li>
+&lt;li>多语言支持&lt;/li>
+&lt;li>社交图标&lt;/li>
+&lt;li>代码高亮&lt;/li>
+&lt;/ul>
+&lt;h2 id="结论">结论&lt;/h2>
+&lt;p>感谢阅读我的第一篇文章！我将继续更新更多有趣的内容。&lt;/p></description></item></channel></rss>

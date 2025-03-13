@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on My Blog</title><link>https://AaronLuo00.github.io/my-blog/en/posts/</link><description>Recent content in Posts on My Blog</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://AaronLuo00.github.io/my-blog/en/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Blog Post</title><link>https://AaronLuo00.github.io/my-blog/en/posts/my-first-post/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><guid>https://AaronLuo00.github.io/my-blog/en/posts/my-first-post/</guid><description>&lt;h1 id="welcome-to-my-blog">Welcome to My Blog&lt;/h1>
+&lt;p>This is my first blog post created with Hugo and PaperMod theme.&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Here, I will share my thoughts and experiences. Hugo is a powerful static site generator, and PaperMod is a clean, modern theme.&lt;/p>
+&lt;h2 id="why-choose-hugo">Why Choose Hugo?&lt;/h2>
+&lt;p>Hugo has several advantages:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Fast&lt;/strong>: Hugo is one of the fastest static site generators available&lt;/li>
+&lt;li>&lt;strong>Easy to Use&lt;/strong>: Simple commands and clear documentation&lt;/li>
+&lt;li>&lt;strong>Flexibility&lt;/strong>: Supports various content formats and customization&lt;/li>
+&lt;li>&lt;strong>Rich Themes&lt;/strong>: Has a large collection of community themes to choose from&lt;/li>
+&lt;/ol>
+&lt;h2 id="features-of-papermod-theme">Features of PaperMod Theme&lt;/h2>
+&lt;p>The PaperMod theme has the following features:&lt;/p></description></item></channel></rss>
