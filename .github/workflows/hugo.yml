@@ -34,12 +34,14 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: |
+          cd $GITHUB_WORKSPACE
+          hugo --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./public
+          path: ${{ github.workspace }}/public
 
   deploy:
     environment:
