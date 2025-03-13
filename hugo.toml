@@ -77,42 +77,30 @@ pagination = { pagerSize = 5 }
 # 菜单设置（英文）
 [languages.en.menu]
   [[languages.en.menu.main]]
-    identifier = "archives"
-    name = "Archives"
-    url = "/archives/"
-    weight = 10
-  
-  [[languages.en.menu.main]]
     identifier = "categories"
     name = "Categories"
-    url = "/categories/"
-    weight = 20
+    url = "/en/categories/"
+    weight = 10
   
   [[languages.en.menu.main]]
     identifier = "tags"
     name = "Tags"
-    url = "/tags/"
-    weight = 30
+    url = "/en/tags/"
+    weight = 20
 
 # 菜单设置（中文）
 [languages.zh-cn.menu]
   [[languages.zh-cn.menu.main]]
-    identifier = "archives"
-    name = "归档"
-    url = "/archives/"
-    weight = 10
-  
-  [[languages.zh-cn.menu.main]]
     identifier = "categories"
     name = "分类"
-    url = "/categories/"
-    weight = 20
+    url = "/zh-cn/categories/"
+    weight = 10
   
   [[languages.zh-cn.menu.main]]
     identifier = "tags"
     name = "标签"
-    url = "/tags/"
-    weight = 30
+    url = "/zh-cn/tags/"
+    weight = 20
 
 # 主要内容部分
 [params]
@@ -126,6 +114,9 @@ pagination = { pagerSize = 5 }
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+  
+  # 禁用归档页面
+  disableArchive = true
 
 # Markdown渲染设置
 [markup]
