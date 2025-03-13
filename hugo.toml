@@ -2,6 +2,7 @@ baseURL = 'https://AaronLuo00.github.io/my-blog/'
 # 默认语言设置
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
+theme = "PaperMod"
 
 # 启用机器人文件
 enableRobotsTXT = true
