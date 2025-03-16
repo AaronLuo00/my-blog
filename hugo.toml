@@ -23,19 +23,19 @@ pagination = { pagerSize = 5 }
   [languages.en]
     languageName = "English"
     weight = 1
-    title = "My Blog"
+    title = "Aaron's Blog"
     description = "My Personal Blog"
     [languages.en.params]
-      author = "Your Name"
+      author = "Aaron"
       
       # Home page information
       [languages.en.params.homeInfoParams]
-        Title = "Welcome to My Blog"
+        Title = "Welcome to Aaron's Blog"
         Content = """
-        This is my personal blog created with Hugo and PaperMod theme.
+        Hi, I'm Aaron! This is my personal blog where I share my thoughts and experiences.
 
-        - Here, I will share my thoughts, experiences, and knowledge
-        - The theme uses PaperMod, a clean and modern Hugo theme
+        - I write about technology, programming, and personal interests
+        - Feel free to explore my posts and get in touch
         """
       
       # Social icons
@@ -45,7 +45,7 @@ pagination = { pagerSize = 5 }
       
       [[languages.en.params.socialIcons]]
         name = "twitter"
-        url = "https://twitter.com/yourusername"
+        url = "https://x.com/aa_blueshark"
 
 # Menu settings
 [languages.en.menu]
