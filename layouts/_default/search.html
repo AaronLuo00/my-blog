@@ -1,0 +1,30 @@
+{{- define "main" }}
+<header class="page-header">
+    <h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        {{ .Title }}
+    </h1>
+    <div class="post-description">搜索博客内容</div>
+</header>
+
+<div id="searchbox">
+    <input id="searchInput" class="search-input" autofocus placeholder="输入关键词搜索..." aria-label="search" type="search">
+    <div class="search-spinner" id="searchSpinner" style="display: none;">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+
+<div id="searchResults" class="search-results">
+    <div class="search-loading" style="display: none;">正在搜索...</div>
+    <div class="search-hits"></div>
+</div>
+
+{{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) }}
+<script defer src="{{ $fastsearch.RelPermalink }}" onload="loadSearch();"></script>
+
+{{- end }} 

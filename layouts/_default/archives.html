@@ -1,0 +1,64 @@
+{{- define "main" }}
+<header class="page-header">
+    <h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-archive">
+            <polyline points="21 8 21 21 3 21 3 8"></polyline>
+            <rect x="1" y="3" width="22" height="5"></rect>
+            <line x1="10" y1="12" x2="14" y2="12"></line>
+        </svg>
+        {{ .Title }}
+    </h1>
+    <div class="post-description">所有文章按时间归档</div>
+</header>
+
+<div class="archive-container">
+    {{- range .Site.RegularPages.GroupByDate "2006" }}
+    <div class="archive-year">
+        <div class="archive-year-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>{{ .Key }}</span>
+        </div>
+        
+        {{- range .Pages }}
+        <article class="archive-entry">
+            <div class="archive-entry-header">
+                <div class="archive-entry-day">{{ .Date.Format "01-02" }}</div>
+                <h3 class="archive-entry-title">
+                    <a href="{{ .Permalink }}" class="archive-entry-link">
+                        {{ .Title }}
+                    </a>
+                </h3>
+            </div>
+            {{- if .Description }}
+            <div class="archive-entry-excerpt">
+                {{ .Description }}
+            </div>
+            {{- end }}
+            <div class="archive-entry-meta">
+                {{- if .Params.categories }}
+                <div class="archive-categories">
+                    {{- range .Params.categories }}
+                    <a href="{{ "categories/" | absURL }}{{ . | urlize }}" class="archive-category">{{ . }}</a>
+                    {{- end }}
+                </div>
+                {{- end }}
+                {{- if .Params.tags }}
+                <div class="archive-tags">
+                    {{- range .Params.tags }}
+                    <a href="{{ "tags/" | absURL }}{{ . | urlize }}" class="archive-tag">#{{ . }}</a>
+                    {{- end }}
+                </div>
+                {{- end }}
+            </div>
+        </article>
+        {{- end }}
+    </div>
+    {{- end }}
+</div>
+
+{{- end }} 
