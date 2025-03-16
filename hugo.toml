@@ -1,24 +1,24 @@
 baseURL = 'https://AaronLuo00.github.io/my-blog/'
-# 默认语言设置
+# Language settings
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 theme = "PaperMod"
 
-# 启用机器人文件
+# Enable robots.txt
 enableRobotsTXT = true
 
-# 构建设置
+# Build settings
 buildDrafts = false
 buildFuture = false
 buildExpired = false
 
-# 启用表情符号
+# Enable emoji
 enableEmoji = true
 
-# 分页设置
+# Pagination settings
 pagination = { pagerSize = 5 }
 
-# 语言设置
+# Language settings
 [languages]
   [languages.en]
     languageName = "English"
@@ -28,7 +28,7 @@ pagination = { pagerSize = 5 }
     [languages.en.params]
       author = "Your Name"
       
-      # 主页信息（英文）
+      # Home page information
       [languages.en.params.homeInfoParams]
         Title = "Welcome to My Blog"
         Content = """
@@ -38,7 +38,7 @@ pagination = { pagerSize = 5 }
         - The theme uses PaperMod, a clean and modern Hugo theme
         """
       
-      # 社交图标（英文）
+      # Social icons
       [[languages.en.params.socialIcons]]
         name = "github"
         url = "https://github.com/AaronLuo00"
@@ -46,68 +46,39 @@ pagination = { pagerSize = 5 }
       [[languages.en.params.socialIcons]]
         name = "twitter"
         url = "https://twitter.com/yourusername"
-  
-  [languages.zh-cn]
-    languageName = "中文"
-    weight = 2
-    title = "我的博客"
-    description = "我的个人博客"
-    [languages.zh-cn.params]
-      author = "您的名字"
-      
-      # 主页信息（中文）
-      [languages.zh-cn.params.homeInfoParams]
-        Title = "欢迎来到我的博客"
-        Content = """
-        这是我使用Hugo和PaperMod主题创建的个人博客。
 
-        - 在这里，我将分享我的想法、经验和知识
-        - 主题使用了PaperMod，一个简洁、现代的Hugo主题
-        """
-      
-      # 社交图标（中文）
-      [[languages.zh-cn.params.socialIcons]]
-        name = "github"
-        url = "https://github.com/AaronLuo00"
-      
-      [[languages.zh-cn.params.socialIcons]]
-        name = "twitter"
-        url = "https://twitter.com/yourusername"
-
-# 菜单设置（英文）
+# Menu settings
 [languages.en.menu]
   [[languages.en.menu.main]]
     identifier = "categories"
     name = "Categories"
-    url = "/en/categories/"
+    url = "/categories/"
     weight = 10
   
   [[languages.en.menu.main]]
     identifier = "tags"
     name = "Tags"
-    url = "/en/tags/"
+    url = "/tags/"
     weight = 20
-
-# 菜单设置（中文）
-[languages.zh-cn.menu]
-  [[languages.zh-cn.menu.main]]
-    identifier = "categories"
-    name = "分类"
-    url = "/zh-cn/categories/"
-    weight = 10
   
-  [[languages.zh-cn.menu.main]]
-    identifier = "tags"
-    name = "标签"
-    url = "/zh-cn/tags/"
-    weight = 20
+  [[languages.en.menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 30
+  
+  [[languages.en.menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 40
 
-# 主要内容部分
+# Main content settings
 [params]
-  # 环境设置
+  # Environment settings
   env = "production"
   
-  # 主题设置
+  # Theme settings
   defaultTheme = "auto"
   ShowShareButtons = true
   ShowReadingTime = true
@@ -115,11 +86,35 @@ pagination = { pagerSize = 5 }
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   
-  # 禁用归档页面
-  disableArchive = true
+  # Enable archive page
+  disableArchive = false
+  
+  # Show taxonomy terms (categories and tags)
+  showtoc = true
+  ShowTaxonomies = true
+  
+  # Search Configuration
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
 
-# Markdown渲染设置
+# Markdown rendering settings
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+# Output formats
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Taxonomy settings
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
