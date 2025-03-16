@@ -7,11 +7,11 @@
         </svg>
         {{ .Title }}
     </h1>
-    <div class="post-description">搜索博客内容</div>
+    <div class="post-description">Search through all content on this blog</div>
 </header>
 
 <div id="searchbox">
-    <input id="searchInput" class="search-input" autofocus placeholder="输入关键词搜索..." aria-label="search" type="search">
+    <input id="searchInput" class="search-input" autofocus placeholder="Type to search..." aria-label="search" type="search">
     <div class="search-spinner" id="searchSpinner" style="display: none;">
         <div class="bounce1"></div>
         <div class="bounce2"></div>
@@ -20,11 +20,11 @@
 </div>
 
 <div id="searchResults" class="search-results">
-    <div class="search-loading" style="display: none;">正在搜索...</div>
+    <div class="search-loading" style="display: none;">Searching...</div>
     <div class="search-hits"></div>
 </div>
 
 {{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) }}
 <script defer src="{{ $fastsearch.RelPermalink }}" onload="loadSearch();"></script>
 
-{{- end }} 
+{{- end }}
